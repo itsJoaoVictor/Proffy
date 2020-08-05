@@ -1,0 +1,8 @@
+# Node Modules Folder
+node_modules
+
+# Database File
+src/database/database.sqlite
+
+# Misc Files
+yarn.lock
