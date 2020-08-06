@@ -11,12 +11,13 @@ export const Item = styled.article`
     padding: 0.2rem;
     font-size: 1.6rem;
     line-height: 2rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
   }
 
   @media (min-width: 700px) {
     > p {
       padding: 0 3.2rem;
+      margin-left: 0;
     }
   }
 `;
@@ -47,10 +48,6 @@ export const TeacherItemHeader = styled.header`
     display: block;
     margin-top: 0.4rem;
   }
-
-  @media (min-width: 700px) {
-    padding: 3.2rem;
-  }
 `;
 
 export const TeacherItemFooter = styled.footer`
@@ -70,7 +67,7 @@ export const TeacherItemFooter = styled.footer`
     margin-left: -6rem;
   }
 
-  button {
+  a {
     width: 20rem;
     height: 5.6rem;
     background: var(--color-secondary);
@@ -79,6 +76,7 @@ export const TeacherItemFooter = styled.footer`
     border-radius: 0.8rem;
     cursor: pointer;
     font: 700 1.4rem Archivo;
+    text-decoration: none;
 
     display: flex;
     align-items: center;

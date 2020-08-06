@@ -12,54 +12,39 @@ export const FormSearchTeachers = styled.form`
     color: var(--color-text-in-primary);
   }
 
-  .input-block {
-    position: relative;
-  }
-
-  .input-block * .input-block {
-    margin-top: 1.4rem;
-  }
-
-  .input-block label {
-    font-size: 1.4rem;
-  }
-
-  .input-block input {
+  button {
     width: 100%;
     height: 5.6rem;
-    margin-top: 0.8rem;
+    background: var(--color-secondary);
+    color: var(--color-button-text);
+    border: 0;
     border-radius: 0.8rem;
-    background: var(--color-input-background);
-    border: 1px solid var(--color-line-in-white);
-    outline: 0;
-    padding: 0 1.6rem;
-    font: 1.6rem Archivo;
+    cursor: pointer;
+    font: 700 1.6rem Archivo;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    transition: background-color 0.2s;
+
+    margin-top: 3.2rem;
   }
 
-  .input-block:focus-within::after {
-    width: calc(100% - 3.2rem);
-    height: 2px;
-    content: '';
-    background: var(--color-primary-light);
-    position: absolute;
-    left: 1.6rem;
-    right: 1.6rem;
-    bottom: 0;
+  button:hover {
+    background: var(--color-secondary-dark);
   }
 
   @media (min-width: 700px) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 16px;
     position: absolute;
     bottom: -28px;
 
     label {
       width: 100%;
-    }
-
-    .input-block * .input-block {
-      margin-top: 0;
     }
   }
 `;
